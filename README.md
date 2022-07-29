@@ -7,3 +7,18 @@ Este repositório tem como objetivo explorar algumas funcionalidades básicas do
 <br>
 
 As informações presentes no conjunto de dados são de transações que foram executadas no mês de setembro do ano de 2013 por titulares de cartões europeus.
+
+### Alguns Resultados :
+
+![image](https://user-images.githubusercontent.com/69936708/181751067-d54fe1b3-b299-4b41-9077-2e9650463130.png)
+
+```
+/* Volume Total Transacionado por Categoria  */
+
+proc sgplot data = creditcard;
+	format Amount dollar8.2;
+	vbar Class / response=Amount stat=sum ;
+	title 'Valor Total Transacionado em Não Fraudes e Fraudes';
+	
+run;
+```
