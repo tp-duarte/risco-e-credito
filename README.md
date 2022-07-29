@@ -10,7 +10,6 @@ As informações presentes no conjunto de dados são de transações que foram e
 
 ### Alguns Resultados :
 
-![image](https://user-images.githubusercontent.com/69936708/181751067-d54fe1b3-b299-4b41-9077-2e9650463130.png)
 
 ```
 /* Volume Total Transacionado por Categoria  */
@@ -22,3 +21,5 @@ proc sgplot data = creditcard;
 	
 run;
 ```
+
+![image](https://user-images.githubusercontent.com/69936708/181751067-d54fe1b3-b299-4b41-9077-2e9650463130.png)
