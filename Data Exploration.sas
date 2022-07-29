@@ -91,7 +91,7 @@ run;
 proc sgplot data=creditcard;
 	where Class="0";
 	series y=Amount x=Time; 
-	title "Transações Não Fraudulentas ao Longo do Tempo"
+	title "Transações Não Fraudulentas ao Longo do Tempo";
 
 run;
 
@@ -100,7 +100,7 @@ run;
 proc sgplot data=creditcard;
 	where Class="1";
 	series y=Amount x=Time; 
-	title "Transações Fraudulentas ao Longo do Tempo"
+	title "Transações Fraudulentas ao Longo do Tempo";
 
 run;
 
