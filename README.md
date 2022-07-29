@@ -23,3 +23,14 @@ run;
 ```
 
 ![image](https://user-images.githubusercontent.com/69936708/181751067-d54fe1b3-b299-4b41-9077-2e9650463130.png)
+
+```
+proc sgplot data=creditcard;
+	where Class="1";
+	series y=Amount x=Time; 
+	title "Transações Fraudulentas ao Longo do Tempo"
+
+run;
+```
+![image](https://user-images.githubusercontent.com/69936708/181751492-e66745ba-8352-4b9b-9239-96df97ba0545.png)
+
